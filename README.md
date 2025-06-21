@@ -1,16 +1,33 @@
-## Hi there 👋
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Iined&label=Profile%20views&color=lightgrey&style=flat" alt="lined" /> </p>
 
-<!--
-**Iined/Iined** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+```csharp
+using System;
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class Info
+{
+    public string Name { get; set; }
+    public string Role { get; set; }
+    public string[] LanguagesSpoken { get; set; }
+
+    public Info()
+    {
+        Name = "lined";
+        Role = "student";
+        LanguagesSpoken = new string[] { "en_GB" };
+    }
+
+    public void SayFact()
+    {
+        Console.WriteLine("just one more drop of blood");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Info me = new Info();
+        me.SayFact();
+    }
+}
